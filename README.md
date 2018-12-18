@@ -9,11 +9,11 @@ It provisions an ETLTopic, ETLQueue, ETLUser with the appropriate permissions.
 
 Start the ETL processes using the virtual env:
 
-python log_processor.py &
-python loader.py &
+1. python log_processor.py &
+2. python loader.py &
 
-Publish a message to the SNS topic: ETLTopic 
-{"type": "batch_collected", "batch_id": "20181201"}
+Publish a message to the SNS topic: ETLTopic : {"type": "batch_collected", "batch_id": "20181201"}
+
 It should trigger the log processsor and in-turn the loader.
 
 
