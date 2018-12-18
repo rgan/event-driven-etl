@@ -1,0 +1,5 @@
+env/
+*.pyc
+*.log
+.aws/
+.idea
